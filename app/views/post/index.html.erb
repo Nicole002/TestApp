@@ -1,0 +1,9 @@
+<h1>Hello World</h1>
+<p>This is my test app for a Rails app</p>
+
+<% @posts.each do |post|%>
+  <p>
+    <%= post.title %> <br>
+    <%= link_to "show more", post_show_path(post.id) %>
+  </p>
+<% end %>
